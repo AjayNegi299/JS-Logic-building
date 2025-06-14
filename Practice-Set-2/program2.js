@@ -9,6 +9,9 @@
 */
 
 function smallestNumber(a,b,c){
+    if (typeof a !== 'number' || typeof b !== 'number' || typeof c !== 'number') {
+        throw new TypeError('All inputs must be numbers.');
+    }
    let smaller = a;
    let lebel = 'A'
 
@@ -29,4 +32,6 @@ console.log(smallestNumber(20,12,14));
 console.log(smallestNumber(16,15,14));
 console.log(smallestNumber(-10,12,14));
 console.log(smallestNumber(8,0,14));
+console.log(smallestNumber('abc',8,8));
+
 
