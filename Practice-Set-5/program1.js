@@ -1,3 +1,5 @@
+// write a function that find a power of number
+
 function findPowerOfNumber(Base,Exponent){
     if(Base <= 0 || Exponent <= 0){
         throw new Error('Base and Exponent should be postive')
